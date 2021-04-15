@@ -1,0 +1,24 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 3557-20
+D Fuse Holder T/H 2 IN 1 AUTO BLDE HOLDER, YELLOW 20A
+F https://www.keyelco.com/product-pdf.cfm?p=14226
+$ENDCMP
+#
+$CMP 896HP-1AH-C-12VDC
+D Automotive Relays 50A, Automotive Relay
+F https://componentsearchengine.com/Datasheets/1/896HP-1AH-C-12VDC.pdf
+$ENDCMP
+#
+$CMP Anderson_Powerpole_2w
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+#End Doc Library
