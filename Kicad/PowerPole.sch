@@ -80,17 +80,6 @@ F 3 "~" H 8050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:Anderson_Powerpole_2w J1
-U 1 1 606C5F1D
-P 1550 2700
-F 0 "J1" H 1468 2917 50  0000 C CNN
-F 1 "Anderson powerpole" H 1468 2826 50  0000 C CNN
-F 2 "SamacSys_Parts:Anderson_powerpole_2w" H 1550 2700 50  0001 C CNN
-F 3 "~" H 1550 2700 50  0001 C CNN
-	1    1550 2700
-	-1   0    0    -1  
-$EndComp
-$Comp
 L SamacSys_Parts:Anderson_Powerpole_2w J2
 U 1 1 606C7C51
 P 8350 3950
@@ -454,19 +443,6 @@ F 3 "https://www.mouser.co.uk/datasheet/2/258/1N4001_7e1N4007_DO_41__V1-1825050.
 	1    2850 1900
 	-1   0    0    1   
 $EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 607A07CE
-P 3400 1900
-F 0 "SW1" H 3400 2185 50  0000 C CNN
-F 1 "SW_Push" H 3400 2094 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 3400 2100 50  0001 C CNN
-F 3 "~" H 3400 2100 50  0001 C CNN
-	1    3400 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1900 2700 1950
 Wire Wire Line
 	3000 1900 3200 1900
 $Comp
@@ -498,12 +474,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 2600 2300 2250
 Wire Wire Line
-	1900 2700 1750 2700
-Wire Wire Line
-	1750 2800 1900 2800
-Wire Wire Line
-	1900 2800 1900 3600
-Wire Wire Line
 	1900 3600 2300 3600
 Connection ~ 2300 3600
 Text Notes 4050 2050 0    50   ~ 10
@@ -512,42 +482,10 @@ Text Notes 1050 4350 0    50   ~ 0
 D4,5 transient supression diodes are to remove any brief voltage spikes.\nD1,2 form part of a crowbar circuit to short the output in the event of over voltage.\nThe fuse may take time to blow if the rating is not exceeded by much which may cause D1,2 \nto get hot and require heat sinking. So instead a relay is used to additionally disconnect the supply.\nD11,12 reduce the supply to the coil as it is designed for 12V but also reduce the voltage \nas the SCR's can clamp at 1.6V which is not enough for the relay to turn off.\nD14 in combination with the switch enables the output and in addition stops the output from \nbeing enabled if the input polarity is incorrect.
 Text Notes 4050 2300 0    50   ~ 0
 TVS 54A peak pulse current.\nSCR 60A on state current (limited by thermals).\nSCR 900A 10ms non repetative surge current.
-$Comp
-L SamacSys_Parts:3557-20 F1
-U 1 1 6074BEC1
-P 1800 1950
-F 0 "F1" H 2200 2215 50  0000 C CNN
-F 1 "<=30A" H 2200 2124 50  0000 C CNN
-F 2 "355720" H 2450 2050 50  0001 L CNN
-F 3 "https://www.keyelco.com/product-pdf.cfm?p=14226" H 2450 1950 50  0001 L CNN
-F 4 "Fuse Holder T/H 2 IN 1 AUTO BLDE HOLDER, YELLOW 20A" H 2450 1850 50  0001 L CNN "Description"
-F 5 "7.37" H 2450 1750 50  0001 L CNN "Height"
-F 6 "534-3557-20" H 2450 1650 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3557-20?qs=iR2ablhfrmF%2FWhSZXEYN7g%3D%3D" H 2450 1550 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Keystone Electronics" H 2450 1450 50  0001 L CNN "Manufacturer_Name"
-F 9 "3557-20" H 2450 1350 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1800 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 1950 2700 1950
-Connection ~ 2700 1950
-Wire Wire Line
-	2700 1950 2700 2050
-Wire Wire Line
-	2600 2050 2700 2050
-Connection ~ 2700 2050
-Wire Wire Line
-	2700 2050 2700 2250
-Wire Wire Line
-	1800 1950 1800 2050
-Wire Wire Line
-	1800 2050 1800 2300
 Wire Wire Line
 	1800 2300 1900 2300
 Wire Wire Line
 	1900 2300 1900 2700
-Connection ~ 1800 2050
 $Comp
 L Device:Q_SCR_KAG D1
 U 1 1 606BA59D
@@ -781,7 +719,7 @@ Wire Wire Line
 	2700 3000 2700 3600
 Connection ~ 2700 3600
 Wire Wire Line
-	2700 3600 3550 3600
+	2700 3600 2850 3600
 Wire Wire Line
 	3700 3000 3700 3100
 Connection ~ 3700 3100
@@ -848,4 +786,120 @@ Wire Wire Line
 Connection ~ 6700 3500
 Wire Wire Line
 	6700 3500 6850 3500
+Wire Wire Line
+	1900 2700 1750 2700
+$Comp
+L Connector:Screw_Terminal_01x01 J6
+U 1 1 607C2679
+P 2900 2150
+F 0 "J6" H 2980 2192 50  0000 L CNN
+F 1 "Meter +ve" H 2980 2101 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm" H 2900 2150 50  0001 C CNN
+F 3 "~" H 2900 2150 50  0001 C CNN
+	1    2900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:Anderson_Powerpole_2w J1
+U 1 1 606C5F1D
+P 1550 2700
+F 0 "J1" H 1468 2917 50  0000 C CNN
+F 1 "Anderson powerpole" H 1468 2826 50  0000 C CNN
+F 2 "SamacSys_Parts:Anderson_powerpole_2w" H 1550 2700 50  0001 C CNN
+F 3 "~" H 1550 2700 50  0001 C CNN
+	1    1550 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J8
+U 1 1 607D620E
+P 1550 3500
+F 0 "J8" H 1468 3275 50  0000 C CNN
+F 1 "Meter LOAD" H 1468 3366 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm" H 1550 3500 50  0001 C CNN
+F 3 "~" H 1550 3500 50  0001 C CNN
+	1    1550 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J7
+U 1 1 607D5987
+P 1550 3150
+F 0 "J7" H 1468 3367 50  0000 C CNN
+F 1 "Meter GND" H 1468 3276 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD4.4mm" H 1550 3150 50  0001 C CNN
+F 3 "~" H 1550 3150 50  0001 C CNN
+	1    1550 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 607A07CE
+P 3400 1900
+F 0 "SW1" H 3400 2185 50  0000 C CNN
+F 1 "SW_Push" H 3400 2094 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 3400 2100 50  0001 C CNN
+F 3 "~" H 3400 2100 50  0001 C CNN
+	1    3400 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 2050
+Wire Wire Line
+	1800 2050 1800 2300
+Wire Wire Line
+	1800 1950 1800 2050
+Connection ~ 2700 2050
+Connection ~ 2700 1950
+Wire Wire Line
+	2700 1950 2700 2050
+Wire Wire Line
+	2700 1900 2700 1950
+Wire Wire Line
+	2600 2050 2700 2050
+Wire Wire Line
+	2600 1950 2700 1950
+$Comp
+L SamacSys_Parts:3557-20 F1
+U 1 1 6074BEC1
+P 1800 1950
+F 0 "F1" H 2200 2215 50  0000 C CNN
+F 1 "<=30A" H 2200 2124 50  0000 C CNN
+F 2 "355720" H 2450 2050 50  0001 L CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=14226" H 2450 1950 50  0001 L CNN
+F 4 "Fuse Holder T/H 2 IN 1 AUTO BLDE HOLDER, YELLOW 20A" H 2450 1850 50  0001 L CNN "Description"
+F 5 "7.37" H 2450 1750 50  0001 L CNN "Height"
+F 6 "534-3557-20" H 2450 1650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3557-20?qs=iR2ablhfrmF%2FWhSZXEYN7g%3D%3D" H 2450 1550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Keystone Electronics" H 2450 1450 50  0001 L CNN "Manufacturer_Name"
+F 9 "3557-20" H 2450 1350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2050 2700 2150
+Connection ~ 2700 2150
+Wire Wire Line
+	2700 2150 2700 2250
+Wire Wire Line
+	1750 2800 1900 2800
+Wire Wire Line
+	1900 2800 1900 3150
+Wire Wire Line
+	1900 3150 1750 3150
+Wire Wire Line
+	1750 3500 1900 3500
+Wire Wire Line
+	1900 3500 1900 3600
+Text Label 2850 3550 0    50   ~ 0
+GND
+Wire Wire Line
+	2850 3550 2850 3600
+Connection ~ 2850 3600
+Wire Wire Line
+	2850 3600 3550 3600
+Text Label 5000 5150 2    50   ~ 0
+Vout
+Wire Wire Line
+	5000 5150 5300 5150
+Connection ~ 5300 5150
 $EndSCHEMATC
