@@ -719,7 +719,7 @@ Wire Wire Line
 	2700 3000 2700 3600
 Connection ~ 2700 3600
 Wire Wire Line
-	2700 3600 3550 3600
+	2700 3600 2850 3600
 Wire Wire Line
 	3700 3000 3700 3100
 Connection ~ 3700 3100
@@ -890,4 +890,16 @@ Wire Wire Line
 	1750 3500 1900 3500
 Wire Wire Line
 	1900 3500 1900 3600
+Text Label 2850 3550 0    50   ~ 0
+GND
+Wire Wire Line
+	2850 3550 2850 3600
+Connection ~ 2850 3600
+Wire Wire Line
+	2850 3600 3550 3600
+Text Label 5000 5150 2    50   ~ 0
+Vout
+Wire Wire Line
+	5000 5150 5300 5150
+Connection ~ 5300 5150
 $EndSCHEMATC
