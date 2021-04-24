@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-04-24T16:44:34+01:00"
+    "CreationDate":  "2021-04-24T17:16:38+01:00"
   },
   "GeneralSpecs":
   {
@@ -55,6 +55,11 @@
       "FilePolarity":  "Positive"
     },
     {
+      "Path":  "PowerPole-B_SilkS.gbr",
+      "FileFunction":  "Legend,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
       "Path":  "PowerPole-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
@@ -96,6 +101,10 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer B.SilkS"
     }
   ]
 }
