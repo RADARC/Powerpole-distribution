@@ -9,3 +9,6 @@ Designed primarily for amateur radio use.
 * Diode protection around the relay and enable switch to stop the output from being enabled if the polarity is reversed.
 * Input fuse for added protection.
 * Output fuses to protect devices which may be rated at lower currents.
+
+# Current status
+Waiting for first revision pcb's to arrive from jlc pcb.
