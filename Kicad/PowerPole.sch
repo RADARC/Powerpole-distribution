@@ -838,7 +838,7 @@ U 1 1 607A07CE
 P 3400 1900
 F 0 "SW1" H 3400 2185 50  0000 C CNN
 F 1 "SW_Push" H 3400 2094 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 3400 2100 50  0001 C CNN
+F 2 "Connector_Wire:SolderWire-0.25sqmm_1x02_P4.2mm_D0.65mm_OD1.7mm" H 3400 2100 50  0001 C CNN
 F 3 "~" H 3400 2100 50  0001 C CNN
 	1    3400 1900
 	1    0    0    -1  

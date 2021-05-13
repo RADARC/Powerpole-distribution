@@ -21,4 +21,10 @@ D Single Precision Timer
 F http://www.ti.com/lit/ds/symlink/ne555.pdf
 $ENDCMP
 #
+$CMP LM74800QDRRRQ1
+D Ideal Diode Controller with Load Dump Protection
+K
+F https://www.ti.com/lit/gpn/lm7480-q1?HQS=ti-null-null-sf-df-pf-sep-wwe&DCM=yes
+$ENDCMP
+#
 #End Doc Library
