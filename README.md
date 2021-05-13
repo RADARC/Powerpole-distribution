@@ -10,5 +10,9 @@ Designed primarily for amateur radio use.
 * Input fuse for added protection.
 * Output fuses to protect devices which may be rated at lower currents.
 
+# Versions
+V1.1 has the powerpole silkscreen updated to indicate the true outline of the socket. The pad and holes for sw1 have been enlarged.
 # Current status
-Waiting for first revision pcb's to arrive from jlc pcb.
+First prototype pcb's have arrived and the circuit has been tested and works.
+Trip voltage is between 15.5V and 15.9V depending on how fast the input voltage seems to rise.
+
