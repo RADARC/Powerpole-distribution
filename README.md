@@ -22,6 +22,18 @@ at the very least a 50A rated one and ideally 100A as the voltage drop across th
 Take note that the current shunt is wired between the netative of the input and outputs. If the power supply has a grounded negative connection then
 return current can flow through ground instead of the negative causing an incorrect current reading. It is undesirable for this to happen anyway
 so an incorrect current reading in this case is probably a good indication that there is something wrong anyway.
+# Assembly tips
+* When soldering the powerpole sockets asemble them and insert the pins and then solder to the PCB. The shells are fine with the high temperatures
+during soldering. Also it helps to plug something into them when soldering the first contact to check that they are perfectly vertical. Otherwise it is not easy
+to tell and you may not realise they are at an angle until something is plugged in.
+* When soldering the relay, powerpole contacts and the fuse holders use plenty of heat and fine solder and try to get the solder to flow right through to the top surface.
+Both surfaces are used for carrying the large currents so it's important to have a good contact between the pins and both surfaces and not rely on the small amount of
+copper in the plated through hole to conduct both sides.
+* The electrolytic capacitor (C3) is a bit too tall as it would require the top of the case to be quite high making removing the fuses difficult or a hole put in the lid
+for the capacitor to poke though. Therefore either lie it down or just solder it to the reverse of the board as there is plenty of space under the PCB as the height
+of the case is governed by the ampmeter and the cables which plug in underneath.
+* A 50W soldering iron was fine for soldering all the contacts even onto the large ground planes. The only joint which was problematic was the relay contact furthest away
+from the input fuse which is probably connected to the armature and sucked away a lot of the heat.
 # 3D case
 A case has been designed for the PCB and the current shunt and meter mentioned above.
 I have made the designs public in Tinkercad so people can modify it to fit different meters or remove the option if desired.
