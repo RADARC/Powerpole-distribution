@@ -23,4 +23,8 @@ Take note that the current shunt is wired between the netative of the input and 
 return current can flow through ground instead of the negative causing an incorrect current reading. It is undesirable for this to happen anyway
 so an incorrect current reading in this case is probably a good indication that there is something wrong anyway.
 # 3D case
-A case is currently being designed to hold the PCB and the meter.
+A case has been designed for the PCB and the current shunt and meter mentioned above.
+I have made the designs public in Tinkercad so people can modify it to fit different meters or remove the option if desired.
+All screws are M3 and I made made use of metal threaded inserts.  
+Base - https://www.tinkercad.com/things/e5ViJ67TmCy  
+Top - https://www.tinkercad.com/things/gQ1BUrXmc8q
