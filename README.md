@@ -40,3 +40,5 @@ I have made the designs public in Tinkercad so people can modify it to fit diffe
 All screws are M3 and I made made use of metal threaded inserts.  
 Base - https://www.tinkercad.com/things/e5ViJ67TmCy  
 Top - https://www.tinkercad.com/things/gQ1BUrXmc8q
+
+![Image of completed unit](https://github.com/RADARC/Powerpole-distribution/blob/main/Completed%20Unit.jpg?raw=true)
